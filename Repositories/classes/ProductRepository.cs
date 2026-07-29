@@ -8,28 +8,32 @@ namespace ProductApp.Repositories.classes
 {
     public class ProductRepository : IProductRepository
     {
-        private List<Product> products = new();
+        private readonly ProductDataStore _dataStore;
+        public ProductRepository(ProductDataStore dataStore)
+        {
+            _dataStore = dataStore;
+        }
         public void AddProduct(Product product)
         {
-            products.Add(product);
+            _dataStore.Add(product);
         }
 
         public bool Exists(string productCode)
         {
-            return products.Any(p => p.ProductCode == productCode);
+            return _dataStore.Products.Any(p => p.ProductCode == productCode);
         }
 
         public List<Product> GetAllProducts()
         {
-            return products;
+            return _dataStore.Products;
         }
 
         public bool RemoveById(int id)
         {
-            Product product = products.FirstOrDefault(p => p.id == id);
+            Product product = _dataStore.Products.FirstOrDefault(p => p.id == id);
             if (product != null)
             {
-                products.Remove(product);
+                _dataStore.Delete (product);
                 return true;
             }
             return false;

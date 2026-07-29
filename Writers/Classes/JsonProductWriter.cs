@@ -9,11 +9,11 @@ namespace ProductApp.Writers.Classes
 {
     public class JsonProductWriter : IProductWriter
     {
-        private readonly string filePath;
+        private readonly string _filePath;
 
         public JsonProductWriter(string filePath)
         {
-            this.filePath = filePath;
+            this._filePath = filePath;
         }
         public void Write(IEnumerable<Product> products)
         {
@@ -21,8 +21,8 @@ namespace ProductApp.Writers.Classes
                 products,
                 new JsonSerializerOptions { WriteIndented = true }
                 );
-            Console.WriteLine(Path.GetFullPath(filePath));
-            File.WriteAllText( filePath, json );
+            Console.WriteLine(Path.GetFullPath(_filePath));
+            File.WriteAllText( _filePath, json );
         }
     }
 }

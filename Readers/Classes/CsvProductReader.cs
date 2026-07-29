@@ -8,18 +8,18 @@ namespace ProductApp.Readers.Classes
 {
     public class CsvProductReader : IProductReader
     {
-        private readonly string filePath;
+        private readonly string _filePath;
 
         public CsvProductReader(string filePath)
         {
-            this.filePath = filePath;
+            this._filePath = filePath;
         }
 
         public IEnumerable<Product> ReadProducts()
         {
             var products = new List<Product>();
 
-            var lines = File.ReadAllLines(filePath);
+            var lines = File.ReadAllLines(_filePath);
 
 
             foreach (var line in lines.Skip(1))

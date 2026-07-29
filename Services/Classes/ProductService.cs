@@ -12,16 +12,16 @@ namespace ProductApp.Services.Classes
 {
     public class ProductService : IProductService
     {
-        private readonly IProductRepository productRepository;
-        private readonly IProductValidator productValidator;
+        private readonly IProductRepository _productRepository;
+        private readonly IProductValidator _productValidator;
         public ProductService(IProductRepository productRepository, IProductValidator productValidator)
         {
-            this.productRepository = productRepository;
-            this.productValidator = productValidator;
+            this._productRepository = productRepository;
+            this._productValidator = productValidator;
         }
         public void ExportProducts(IProductWriter writer)
         {
-            writer.Write(productRepository.GetAllProducts());
+            writer.Write(_productRepository.GetAllProducts());
         }
 
         public void ImportProducts(IProductReader reader)
@@ -29,15 +29,11 @@ namespace ProductApp.Services.Classes
             var products = reader.ReadProducts();
             foreach (var product in products)
             {
-                if (IsValidProductCode(product.ProductCode))
-                {
-                    Console.WriteLine($"Product with code {product.ProductCode} already exists. Skipping import.");
-                    continue;
-                }
-                var result = productValidator.Validate(product);
+                
+                var result = _productValidator.Validate(product);
                 if (result == "Valid")
                 {
-                    productRepository.AddProduct(product);
+                    _productRepository.AddProduct(product);
                 }
                 else
                 {
@@ -45,10 +41,5 @@ namespace ProductApp.Services.Classes
                 }
             }
         }
-    
-    public bool IsValidProductCode(string productCode)
-        {
-            return productRepository.Exists(productCode);
-        } 
     }
 }
