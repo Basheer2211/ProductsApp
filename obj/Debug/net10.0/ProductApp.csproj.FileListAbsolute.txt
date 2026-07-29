@@ -1,0 +1,15 @@
+C:\Users\user\source\repos\ProductApp\ProductApp\bin\Debug\net10.0\ProductApp.exe
+C:\Users\user\source\repos\ProductApp\ProductApp\bin\Debug\net10.0\ProductApp.deps.json
+C:\Users\user\source\repos\ProductApp\ProductApp\bin\Debug\net10.0\ProductApp.runtimeconfig.json
+C:\Users\user\source\repos\ProductApp\ProductApp\bin\Debug\net10.0\ProductApp.dll
+C:\Users\user\source\repos\ProductApp\ProductApp\bin\Debug\net10.0\ProductApp.pdb
+C:\Users\user\source\repos\ProductApp\ProductApp\obj\Debug\net10.0\ProductApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\source\repos\ProductApp\ProductApp\obj\Debug\net10.0\ProductApp.AssemblyInfoInputs.cache
+C:\Users\user\source\repos\ProductApp\ProductApp\obj\Debug\net10.0\ProductApp.AssemblyInfo.cs
+C:\Users\user\source\repos\ProductApp\ProductApp\obj\Debug\net10.0\ProductApp.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\ProductApp\ProductApp\obj\Debug\net10.0\ProductApp.dll
+C:\Users\user\source\repos\ProductApp\ProductApp\obj\Debug\net10.0\refint\ProductApp.dll
+C:\Users\user\source\repos\ProductApp\ProductApp\obj\Debug\net10.0\ProductApp.pdb
+C:\Users\user\source\repos\ProductApp\ProductApp\obj\Debug\net10.0\ProductApp.genruntimeconfig.cache
+C:\Users\user\source\repos\ProductApp\ProductApp\obj\Debug\net10.0\ref\ProductApp.dll
+C:\Users\user\source\repos\ProductApp\ProductApp\bin\Debug\net10.0\products.csv

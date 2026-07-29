@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "ProductCode": "P001",
+    "ProductName": "Laptop",
+    "Price": 1000,
+    "Quantity": 5
+  },
+  {
+    "id": 2,
+    "ProductCode": "P002",
+    "ProductName": "Phone",
+    "Price": 500,
+    "Quantity": 10
+  },
+  {
+    "id": 3,
+    "ProductCode": "P003",
+    "ProductName": "Mouse",
+    "Price": 50,
+    "Quantity": 20
+  }
+]
