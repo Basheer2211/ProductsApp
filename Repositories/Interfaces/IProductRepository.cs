@@ -9,7 +9,7 @@ namespace ProductApp.Repositories.Interfaces
     {
         public List<Product> GetAllProducts();
         public void AddProduct(Product product);
-        public bool RemoveById(int id);
+        public bool RemoveById(int Id);
         bool Exists(string productCode);
     }
 }

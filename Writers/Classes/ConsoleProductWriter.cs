@@ -12,7 +12,7 @@ namespace ProductApp.Writers.Classes
         {
             foreach (var item in products)
             {
-                Console.WriteLine($"Id : {item.id}");
+                Console.WriteLine($"Id : {item.Id}");
                 Console.WriteLine($"Product Name : {item.ProductName}");
                 Console.WriteLine($"Product Code : {item.ProductCode}");
                 Console.WriteLine($"Price : {item.Price}");

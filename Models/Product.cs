@@ -7,7 +7,7 @@ namespace ProductApp.Models
 {
     public class Product  
     {
-        public int id { get; private set; }
+ 
         [Required]
         public string ProductCode { get; set; }
         [Required]

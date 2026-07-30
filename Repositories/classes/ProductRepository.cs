@@ -28,9 +28,9 @@ namespace ProductApp.Repositories.classes
             return _dataStore.Products;
         }
 
-        public bool RemoveById(int id)
+        public bool RemoveById(int Id)
         {
-            Product product = _dataStore.Products.FirstOrDefault(p => p.id == id);
+            Product product = _dataStore.Products.FirstOrDefault(p => p.Id == Id);
             if (product != null)
             {
                 _dataStore.Delete (product);

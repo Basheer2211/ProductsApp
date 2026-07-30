@@ -33,6 +33,7 @@ class Program
         if (inputChoice == "1")
         {
             reader = ProductReaderFactory.Create("console");
+
         }
         else if (inputChoice == "2")
         {

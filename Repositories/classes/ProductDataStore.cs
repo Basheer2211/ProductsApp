@@ -28,7 +28,7 @@ namespace ProductApp.Repositories.classes
 
         public void Update(Product product)
         {
-            var existingProduct = Products.FirstOrDefault(p => p.id == product.id);
+            var existingProduct = Products.FirstOrDefault(p => p.Id == product.Id);
             if (existingProduct != null)
             {
                 Products.Remove(existingProduct);
